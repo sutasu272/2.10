@@ -24,7 +24,9 @@ func main() {
 	fmt.Print("Введите число n: ")
 	fmt.Scan(&n)
 	for i := 1; i <= n; i++ {
-		fmt.Printf("%d ", i)
+		if i%3 == 0 {
+			fmt.Printf("%d ", i)
+		}
 	}
 	fmt.Println()
 	// Задание 5
